@@ -1,0 +1,7 @@
+# SPA routing - redirect all non-asset paths to index.html
+/* /index.html 200
+
+# Module Federation remotes
+/we-review/* https://we-review.pages.dev/:splat 200
+/we-emp/* https://we-emp.pages.dev/:splat 200
+/we-inv/* https://we-inv.pages.dev/:splat 200

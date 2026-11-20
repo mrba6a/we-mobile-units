@@ -1,0 +1,11 @@
+name = "we-review"
+compatibility_date = "2024-07-01"
+pages_build_output_dir = "dist"
+
+[build]
+command = "npm run build"
+destination = "dist"
+
+[vars]
+NODE_ENV = "production"
+VITE_API_BASE = "https://we-api.mrba6a.workers.dev"
