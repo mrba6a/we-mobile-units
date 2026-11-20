@@ -1,0 +1,36 @@
+name = "we-mobile-units-api"
+main = "src/index.ts"
+compatibility_date = "2024-07-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+ENVIRONMENT = "production"
+API_VERSION = "v1"
+
+# Google Apps Script URLs (set in Cloudflare Dashboard)
+# CAIRO_SCRIPT_URL = "https://script.google.com/macros/s/.../exec"
+# DELTA_SCRIPT_URL = "https://script.google.com/macros/s/.../exec"
+# UPPER_SCRIPT_URL = "https://script.google.com/macros/s/.../exec"
+# REPORTS_SCRIPT_URL = "https://script.google.com/macros/s/.../exec"
+# INTERNAL_SECRET = "your-random-64-char-secret"
+# JWT_SECRET = "your-random-64-char-secret"
+
+[[kv_namespaces]]
+binding = "CACHE"
+id = "your-kv-namespace-id"
+preview_id = "your-preview-kv-namespace-id"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "we-mobile-units"
+database_id = "your-d1-database-id"
+
+[triggers]
+crons = ["0 2 * * *"]  # Daily at 2 AM for archive sync
+
+[observability]
+enabled = true
+
+[build]
+command = "npm run build"
+watch_dir = "src"

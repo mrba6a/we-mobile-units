@@ -1,0 +1,20 @@
+export const PRODUCT_CATEGORIES = [
+  "WE Life",
+  "WE Mix 250",
+  "WE Mix 355",
+  "WE Gold (Postpaid)",
+  "MNP (حول رقمك)",
+  "E-SIM",
+  "Wallet",
+  "خطوط الطلبة",
+  "خطوط الغاز الطبيعي",
+  "خطوط المبادرة",
+  "ADSL",
+  "Fixed Lines",
+  "Routers",
+  "WE Air",
+  "ONT",
+  "CPE",
+  "Mi-Fi",
+  "أجهزة"
+];
